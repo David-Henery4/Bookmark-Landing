@@ -30,7 +30,7 @@
   </head>
   <body class="min-h-screen font-rubik">
     <!-- CONTAINER -->
-    <div class="grid w-full grid-cols-bleed pt-10">
+    <div class="smTab:grid-cols-tabBleed grid w-full grid-cols-bleed pt-10">
       <!-- NAVBAR -->
       <nav
         class="col-start-2 col-end-14 flex w-full items-center justify-between"
@@ -38,13 +38,13 @@
         <img src="images/logo-bookmark.svg" alt="main-logo" />
         <img src="images/icon-hamburger.svg" alt="" />
       </nav>
-      <main class="w-full grid-cols-bleed col-start-1 col-end-15 grid gap-y-20">
+      <main class="smTab:grid-cols-tabBleed w-full grid-cols-bleed col-start-1 col-end-15 grid gap-y-20">
         <!-- HEADER -->
         <header
           class="col-start-2 col-end-14 mt-20 flex w-full flex-col items-center justify-center gap-24"
         >
           <!-- SVG HERO -->
-          <div class="h-52 w-full">
+          <div class="max-w-md w-full">
             <svg
               class="h-full w-full"
               viewbox="27 -10 600 427"
@@ -341,19 +341,19 @@
                 instantly. Try it for free.
               </p>
               <div
-                class="flex w-full items-center justify-between gap-4 text-center"
+                class="max-w-heroBtns mx-auto flex w-full items-center justify-between gap-3 text-center"
               >
-                <div class="h-12 max-w-ctaBtn rounded-md bg-softBlue px-4">
+                <div class="h-12 max-w-ctaBtn rounded-md bg-softBlue px-3">
                   <a
                     href="#"
-                    class="text grid h-full w-full place-items-center text-sm text-white"
+                    class="font-medium text grid h-full w-full place-items-center text-sm text-white"
                     >Get it on Chrome</a
                   >
                 </div>
-                <div class="h-12 max-w-ctaBtn px-4 shadow-md">
+                <div class="h-12 max-w-ctaBtn px-3 shadow-md">
                   <a
                     href="#"
-                    class="text grid h-full w-full place-items-center rounded-md text-sm text-greyishBlue/75"
+                    class="font-medium text grid h-full w-full place-items-center rounded-md text-sm text-greyishBlue/75"
                     >Get it on Firefox</a
                   >
                 </div>
@@ -397,7 +397,7 @@
             </div>
             <!-- Slides -->
             <div class="flex flex-col gap-16">
-              <img
+              <img class="mx-auto"
                 src="images/illustration-features-tab-1.svg"
                 alt="illustration-tab-1"
               />
@@ -526,7 +526,7 @@
             </p>
           </div>
           <!-- Questions & MoreInfo -->
-          <div class="grid place-items-center gap-12">
+          <div class="w-full max-w-faqs grid place-items-center gap-12">
             <!-- Questions -->
             <div class="w-full grid place-items-center">
               <!-- Question #1 -->
@@ -563,7 +563,7 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="grid grid-cols-bleed col-start-1 col-end-15 bg-softBlue text-white">
+        <section class="smTab:grid-cols-tabBleed grid grid-cols-bleed col-start-1 col-end-15 bg-softBlue text-white">
           <div class="text-center flex flex-col justify-center items-center w-full col-start-2 col-end-14 py-16 gap-8">
             <div>
               <p class="text-xs font-medium leading-10 tracking-contactSpacing">
@@ -590,7 +590,7 @@
       
       <!-- FOOTER -->
       <footer
-      class="col-start-1 col-end-15 grid grid-cols-bleed bg-greyishBlue text-white"
+      class="smTab:grid-cols-tabBleed col-start-1 col-end-15 grid grid-cols-bleed bg-greyishBlue text-white"
       >
         <div
           class="col-start-2 col-end-14 flex flex-col items-center gap-12 py-10"

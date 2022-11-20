@@ -15,8 +15,13 @@ module.exports = {
       white: "#ffffff",
     },
     extend: {
+      screens: {
+        smTab: "610px",
+        smLap: "930px",
+      },
       gridTemplateColumns: {
         bleed: "32px repeat(12, 1fr) 32px",
+        tabBleed: "82.5px repeat(12, 1fr) 82.5px",
       },
       gridColumnEnd: {
         14: "14",
@@ -34,6 +39,8 @@ module.exports = {
       maxWidth: {
         card: "280px",
         ctaBtn: "151px",
+        heroBtns: "343px",
+        faqs: "540px",
       },
       spacing: {
         92: "371px",
