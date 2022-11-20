@@ -1,0 +1,16 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "bookmark-landing",
+  "main": "index.html",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "author": "David Henery",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.4"
+  }
+}

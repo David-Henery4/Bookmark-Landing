@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- TEMP -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JAVASCRIPT -->
+    <script defer src="./sidebar.js"></script>
+    <title>Bookmark landing page</title>
+  </head>
+  <body class="min-h-screen font-rubik">
+    <!-- CONTAINER -->
+    <div class="grid w-full grid-cols-bleed pt-10">
+      <!-- NAVBAR -->
+      <nav
+        class="col-start-2 col-end-14 flex w-full items-center justify-between"
+      >
+        <img src="images/logo-bookmark.svg" alt="main-logo" />
+        <img src="images/icon-hamburger.svg" alt="" />
+      </nav>
+      <main class="col-start-2 col-end-14">
+        <!-- HEADER -->
+        <header class="">
+          <img src="images/illustration-hero.svg" alt="hero-illustration" />
+          <div>
+            <h1 class="text-3xl font-medium leading-10 text-greyishBlue">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="text-basic leading-6 text-greyishBlue/50">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="flex w-full gap-4 flex-wrap justify-center items-center">
+              <div class="h-12 max-w-ctaBtn rounded-md bg-softBlue px-4">
+                <a
+                  href="#"
+                  class="text grid h-full w-full place-items-center text-sm leading-7 text-white"
+                  >Get it on Chrome</a
+                >
+              </div>
+              <div class="px-4 h-12 max-w-ctaBtn shadow-md">
+                <a
+                  href="#"
+                  class="text grid h-full w-full place-items-center rounded-md text-sm leading-7 text-greyishBlue/75"
+                  >Get it on Firefox</a
+                >
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- FEATURES SECTION -->
+        <section>
+          <div>
+            <h2 class="text-2xl font-medium leading-11 text-greyishBlue">
+              Features
+            </h2>
+            <p class="text-basic leading-6 text-greyishBlue/50">
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
+          <div>
+            <!-- Tabs -->
+            <div>
+              <h3
+                class="text-base font-normal leading-4 tracking-wide text-greyishBlue"
+              >
+                Simple Bookmarking
+              </h3>
+              <h3
+                class="text-base font-normal leading-4 tracking-wide text-greyishBlue/75"
+              >
+                Speedy Searching
+              </h3>
+              <h3
+                class="text-base font-normal leading-4 tracking-wide text-greyishBlue/75"
+              >
+                Easy Sharing
+              </h3>
+            </div>
+            <!-- Slides -->
+            <div>
+              <img
+                src="images/illustration-features-tab-1.svg"
+                alt="illustration-tab-1"
+              />
+              <div>
+                <h2 class="text-2xl font-medium leading-11 text-greyishBlue">
+                  Bookmark in one click
+                </h2>
+                <p class="text-basic font-normal leading-6 text-greyishBlue/50">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <div class="h-12 w-28 rounded-md bg-softBlue">
+                  <a
+                    href="#"
+                    class="grid h-full w-full place-items-center text-white"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXTENSION SECTION-->
+        <section>
+          <div>
+            <h2 class="text-2xl font-medium text-greyishBlue">
+              Download the extension
+            </h2>
+            <p class="text-basic leading-6 text-greyishBlue/50">
+              We’ve got more browsers in the pipeline. Please do let us know if
+              you’ve got a favourite you’d like us to prioritize.
+            </p>
+          </div>
+          <div>
+            <div class="h-92 w-full max-w-card rounded-2xl p-6 shadow-md">
+              <img src="images/logo-chrome.svg" alt="chrome" />
+              <h3 class="text-xl font-medium text-greyishBlue">
+                Add to Chrome
+              </h3>
+              <h4 class="text-sm leading-7 text-greyishBlue/50">
+                Minimum version 62
+              </h4>
+              <img src="images/bg-dots.svg" alt="dots" />
+              <button
+                class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+            <div class="h-92 w-full max-w-card rounded-2xl p-6 shadow-md">
+              <img src="images/logo-firefox.svg" alt="firefox" />
+              <h3 class="text-xl font-medium text-greyishBlue">
+                Add to Firefox
+              </h3>
+              <h4 class="text-sm leading-7 text-greyishBlue/50">
+                Minimum version 55
+              </h4>
+              <img src="images/bg-dots.svg" alt="dots" />
+              <button
+                class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+            <div class="h-92 w-full max-w-card rounded-2xl p-6 shadow-md">
+              <img src="images/logo-opera.svg" alt="opera" />
+              <h3 class="text-xl font-medium text-greyishBlue">Add to Opera</h3>
+              <h4 class="text-sm leading-7 text-greyishBlue/50">
+                Minimum version 46
+              </h4>
+              <img src="images/bg-dots.svg" alt="dots" />
+              <button
+                class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQS SECTION -->
+        <section>
+          <div>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Here are some of our FAQs. If you have any other questions you’d
+              like answered please feel free to email us.
+            </p>
+          </div>
+          <div>
+            <div>
+              <p>What is Bookmark?</p>
+              <img src="images/icon-arrow.svg" alt="arrow" />
+            </div>
+            <div>
+              <p>How can I request a new browser?</p>
+              <img src="images/icon-arrow.svg" alt="arrow" />
+            </div>
+            <div>
+              <p>Is there a mobile app?</p>
+              <img src="images/icon-arrow.svg" alt="arrow" />
+            </div>
+            <div>
+              <p>What about other Chromium browsers?</p>
+              <img src="images/icon-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="w-28 h-12 bg-softBlue rounded-md">
+            <a class="text-sm font-medium w-full h-full grid place-items-center text-white tracking-wide" href="#">
+              More Info
+            </a>
+          </div>
+        </section>
+        
+        <!-- CONTACT SECTION -->
+        <section class="bg-softBlue text-white">
+          <p class="text-xs leading-10 font-medium tracking-contactSpacing">
+            35,000+ ALREADY JOINED
+          </p>
+          <h2 class="text-2xl leading-7">
+            Stay up-to-date with what we're doing
+          </h2>
+          <div>
+            <input class="placeholder:text-sm placeholder:font-normal placeholder:tracking-wide" type="email" placeholder="Enter your email address">
+            <button class="w-full h-12 bg-softRed rounded-md">Contact Us</button>
+          </div>
+        </section>
+      
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="text-white col-start-1 col-end-15 bg-greyishBlue grid grid-cols-bleed">
+        <div class="col-start-2 col-end-14 flex flex-col items-center gap-12 py-10">
+          <div class="flex flex-col  gap-10">
+            <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+            <ul class="flex flex-col items-center gap-8 text-basic font-normal leading-4 tracking-widest">
+              <li>FEATURES</li>
+              <li>PRICING</li>
+              <li>CONTACT</li>
+            </ul>
+          </div>
+        <div class="flex gap-10">
+          <img src="images/icon-facebook.svg" alt="icon-facebook">
+          <img src="images/icon-twitter.svg" alt="icon-twitter">
+        </div>
+      </div>
+      </footer>
+    </div>
+  </body>
+</html>
