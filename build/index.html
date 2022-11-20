@@ -38,41 +38,335 @@
         <img src="images/logo-bookmark.svg" alt="main-logo" />
         <img src="images/icon-hamburger.svg" alt="" />
       </nav>
-      <main class="col-start-2 col-end-14">
+      <main class="w-full grid-cols-bleed col-start-1 col-end-15 grid gap-y-20">
         <!-- HEADER -->
-        <header class="">
-          <img src="images/illustration-hero.svg" alt="hero-illustration" />
-          <div>
-            <h1 class="text-3xl font-medium leading-10 text-greyishBlue">
+        <header
+          class="col-start-2 col-end-14 mt-20 flex w-full flex-col items-center justify-center gap-24"
+        >
+          <!-- SVG HERO -->
+          <div class="h-52 w-full">
+            <svg
+              class="h-full w-full"
+              viewbox="27 -10 600 427"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <filter
+                  id="a"
+                  width="118%"
+                  height="126.9%"
+                  x="-9%"
+                  y="-5.7%"
+                  filterUnits="objectBoundingBox"
+                >
+                  <feOffset
+                    dy="2"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                    stdDeviation="2"
+                  />
+                  <feColorMatrix
+                    in="shadowBlurOuter1"
+                    result="shadowMatrixOuter1"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                  />
+                  <feMerge>
+                    <feMergeNode in="shadowMatrixOuter1" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <rect id="c" width="578" height="385" rx="26" />
+                <filter
+                  id="b"
+                  width="126%"
+                  height="139%"
+                  x="-13%"
+                  y="-11.7%"
+                  filterUnits="objectBoundingBox"
+                >
+                  <feOffset
+                    dy="30"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                    stdDeviation="20"
+                  />
+                  <feColorMatrix
+                    in="shadowBlurOuter1"
+                    values="0 0 0 0 0.18243335 0 0 0 0 0.230632694 0 0 0 0 0.506057518 0 0 0 0.200120192 0"
+                  />
+                </filter>
+                <linearGradient
+                  id="d"
+                  x1="99.013%"
+                  x2="2.544%"
+                  y1="71.675%"
+                  y2="29.014%"
+                >
+                  <stop offset="0%" stop-color="#151515" />
+                  <stop offset="100%" stop-color="#3D3D3D" />
+                </linearGradient>
+                <rect id="e" width="536" height="346" y="3" rx="8" />
+              </defs>
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                filter="url(#a)"
+                transform="translate(39 9)"
+              >
+                <g transform="translate(.5 .5)">
+                  <g fill-rule="nonzero">
+                    <use fill="#000" filter="url(#b)" xlink:href="#c" />
+                    <use fill="#777" xlink:href="#c" />
+                  </g>
+                  <rect
+                    width="574.23"
+                    height="381.865"
+                    x="2"
+                    y="2"
+                    fill="url(#d)"
+                    fill-rule="nonzero"
+                    rx="25"
+                  />
+                  <g transform="translate(21.03 16.303)">
+                    <rect
+                      width="471.463"
+                      height="353.756"
+                      x="33"
+                      fill="#2A2A2A"
+                      fill-rule="nonzero"
+                      opacity=".1"
+                      rx="5"
+                    />
+                    <mask id="f" fill="#fff"><use xlink:href="#e" /></mask>
+                    <use fill="#E8EAF6" fill-rule="nonzero" xlink:href="#e" />
+                    <g mask="url(#f)">
+                      <path fill="#5267DF" d="M-3.53 3.197h547v59h-547z" />
+                      <g transform="translate(22.47 17.197)" fill="#FFF">
+                        <circle cx="16" cy="16" r="16" opacity=".245" />
+                        <circle cx="477" cy="16" r="16" opacity=".104" />
+                        <g transform="translate(47 6)">
+                          <rect width="120" height="6" opacity=".75" rx="3" />
+                          <rect
+                            width="64"
+                            height="6"
+                            y="14"
+                            opacity=".25"
+                            rx="3"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                    <g mask="url(#f)">
+                      <g transform="translate(57 96)">
+                        <rect width="261" height="316" fill="#FFF" rx="8" />
+                        <rect
+                          width="128"
+                          height="316"
+                          x="295"
+                          fill="#FFF"
+                          rx="8"
+                        />
+                        <rect
+                          width="120"
+                          height="6"
+                          x="78.47"
+                          y="38.197"
+                          fill="#242A45"
+                          opacity=".5"
+                          rx="3"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g transform="translate(110 135)">
+                  <circle cx="16" cy="26" r="16" fill="#F98E5D" />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    y="20"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    y="40"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    y="60"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    y="94"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    y="114"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="88"
+                    height="6"
+                    x="284"
+                    y="134"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                  <rect
+                    width="64"
+                    height="6"
+                    x="47"
+                    y="30"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                </g>
+                <g transform="translate(110 201)">
+                  <circle cx="16" cy="16" r="16" fill="#6AC6D6" />
+                  <rect
+                    width="120"
+                    height="6"
+                    x="47"
+                    y="6"
+                    fill="#242A45"
+                    opacity=".5"
+                    rx="3"
+                  />
+                  <rect
+                    width="64"
+                    height="6"
+                    x="47"
+                    y="20"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                </g>
+                <g transform="translate(110 257)">
+                  <circle cx="16" cy="16" r="16" fill="#A47ED4" />
+                  <rect
+                    width="120"
+                    height="6"
+                    x="47"
+                    y="6"
+                    fill="#242A45"
+                    opacity=".5"
+                    rx="3"
+                  />
+                  <rect
+                    width="64"
+                    height="6"
+                    x="47"
+                    y="20"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                </g>
+                <g transform="translate(110 313)">
+                  <circle cx="16" cy="16" r="16" fill="#EC7878" />
+                  <rect
+                    width="120"
+                    height="6"
+                    x="47"
+                    y="6"
+                    fill="#242A45"
+                    opacity=".5"
+                    rx="3"
+                  />
+                  <rect
+                    width="64"
+                    height="6"
+                    x="47"
+                    y="20"
+                    fill="#242A45"
+                    opacity=".25"
+                    rx="3"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="flex w-full flex-col items-center justify-center gap-4">
+            <h1
+              class="text-center text-3xl font-medium leading-10 text-greyishBlue"
+            >
               A Simple Bookmark Manager
             </h1>
-            <p class="text-basic leading-6 text-greyishBlue/50">
-              A clean and simple interface to organize your favourite websites.
-              Open a new browser tab and see your sites load instantly. Try it
-              for free.
-            </p>
-            <div class="flex w-full gap-4 flex-wrap justify-center items-center">
-              <div class="h-12 max-w-ctaBtn rounded-md bg-softBlue px-4">
-                <a
-                  href="#"
-                  class="text grid h-full w-full place-items-center text-sm leading-7 text-white"
-                  >Get it on Chrome</a
-                >
-              </div>
-              <div class="px-4 h-12 max-w-ctaBtn shadow-md">
-                <a
-                  href="#"
-                  class="text grid h-full w-full place-items-center rounded-md text-sm leading-7 text-greyishBlue/75"
-                  >Get it on Firefox</a
-                >
+            <div class="flex flex-col gap-8">
+              <p class="text-center text-basic leading-6 text-greyishBlue/50">
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+              <div
+                class="flex w-full items-center justify-between gap-4 text-center"
+              >
+                <div class="h-12 max-w-ctaBtn rounded-md bg-softBlue px-4">
+                  <a
+                    href="#"
+                    class="text grid h-full w-full place-items-center text-sm text-white"
+                    >Get it on Chrome</a
+                  >
+                </div>
+                <div class="h-12 max-w-ctaBtn px-4 shadow-md">
+                  <a
+                    href="#"
+                    class="text grid h-full w-full place-items-center rounded-md text-sm text-greyishBlue/75"
+                    >Get it on Firefox</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </header>
 
         <!-- FEATURES SECTION -->
-        <section>
-          <div>
+        <section
+          class="col-start-2 col-end-14 flex w-full flex-col items-center justify-center gap-10"
+        >
+          <div class="w-full text-center">
             <h2 class="text-2xl font-medium leading-11 text-greyishBlue">
               Features
             </h2>
@@ -82,33 +376,33 @@
               you can access them on the go.
             </p>
           </div>
-          <div>
+          <div class="flex w-full flex-col gap-16 text-center">
             <!-- Tabs -->
             <div>
               <h3
-                class="text-base font-normal leading-4 tracking-wide text-greyishBlue"
+                class="border-b border-b-softBlue/20 py-5 text-base font-normal leading-4 tracking-wide text-greyishBlue"
               >
                 Simple Bookmarking
               </h3>
               <h3
-                class="text-base font-normal leading-4 tracking-wide text-greyishBlue/75"
+                class="border-b border-b-softBlue/20 py-5 text-base font-normal leading-4 tracking-wide text-greyishBlue/75"
               >
                 Speedy Searching
               </h3>
               <h3
-                class="text-base font-normal leading-4 tracking-wide text-greyishBlue/75"
+                class="border-b border-b-softBlue/20 py-5 text-base font-normal leading-4 tracking-wide text-greyishBlue/75"
               >
                 Easy Sharing
               </h3>
             </div>
             <!-- Slides -->
-            <div>
+            <div class="flex flex-col gap-16">
               <img
                 src="images/illustration-features-tab-1.svg"
                 alt="illustration-tab-1"
               />
-              <div>
-                <h2 class="text-2xl font-medium leading-11 text-greyishBlue">
+              <div class="flex flex-col items-center justify-center gap-4">
+                <h2 class="text-2xl font-medium text-greyishBlue">
                   Bookmark in one click
                 </h2>
                 <p class="text-basic font-normal leading-6 text-greyishBlue/50">
@@ -129,8 +423,8 @@
         </section>
 
         <!-- EXTENSION SECTION-->
-        <section>
-          <div>
+        <section class="col-start-2 col-end-14 flex flex-col gap-10 text-center">
+          <div class="flex flex-col gap-4">
             <h2 class="text-2xl font-medium text-greyishBlue">
               Download the extension
             </h2>
@@ -139,119 +433,183 @@
               you’ve got a favourite you’d like us to prioritize.
             </p>
           </div>
-          <div>
-            <div class="h-92 w-full max-w-card rounded-2xl p-6 shadow-md">
-              <img src="images/logo-chrome.svg" alt="chrome" />
-              <h3 class="text-xl font-medium text-greyishBlue">
-                Add to Chrome
-              </h3>
-              <h4 class="text-sm leading-7 text-greyishBlue/50">
-                Minimum version 62
-              </h4>
-              <img src="images/bg-dots.svg" alt="dots" />
-              <button
-                class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
-              >
-                Add & Install Extension
-              </button>
+          <!-- CARDS -->
+          <div class="flex flex-col items-center justify-center gap-10">
+            <!-- CARD#1 -->
+            <div class="h-92 w-full max-w-card rounded-2xl shadow-md">
+              <!-- CARD TOP -->
+              <div class="card-upper">
+                <img src="images/logo-chrome.svg" alt="chrome" />
+                <div>
+                  <h3 class="text-xl font-medium text-greyishBlue">
+                    Add to Chrome
+                  </h3>
+                  <h4 class="text-sm leading-7 text-greyishBlue/50">
+                    Minimum version 62
+                  </h4>
+                </div>
+              </div>
+              <!-- CARD BOTTOM -->
+              <div>
+                <img src="images/bg-dots.svg" alt="dots" />
+                <div class="p-6">
+                  <button
+                    class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+                  >
+                    Add & Install Extension
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="h-92 w-full max-w-card rounded-2xl p-6 shadow-md">
-              <img src="images/logo-firefox.svg" alt="firefox" />
-              <h3 class="text-xl font-medium text-greyishBlue">
-                Add to Firefox
-              </h3>
-              <h4 class="text-sm leading-7 text-greyishBlue/50">
-                Minimum version 55
-              </h4>
-              <img src="images/bg-dots.svg" alt="dots" />
-              <button
-                class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
-              >
-                Add & Install Extension
-              </button>
+            <!-- CARD#2 -->
+            <div class="h-92 w-full max-w-card rounded-2xl shadow-md">
+              <!-- CARD TOP -->
+              <div class="card-upper">
+                <img src="images/logo-firefox.svg" alt="firefox" />
+                <div>
+                  <h3 class="text-xl font-medium text-greyishBlue">
+                    Add to Firefox
+                  </h3>
+                  <h4 class="text-sm leading-7 text-greyishBlue/50">
+                    Minimum version 55
+                  </h4>
+                </div>
+              </div>
+              <!-- CARD BOTTOM -->
+              <div>
+                <img src="images/bg-dots.svg" alt="dots" />
+                <div class="p-6">
+                  <button
+                    class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+                  >
+                    Add & Install Extension
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="h-92 w-full max-w-card rounded-2xl p-6 shadow-md">
-              <img src="images/logo-opera.svg" alt="opera" />
-              <h3 class="text-xl font-medium text-greyishBlue">Add to Opera</h3>
-              <h4 class="text-sm leading-7 text-greyishBlue/50">
-                Minimum version 46
-              </h4>
-              <img src="images/bg-dots.svg" alt="dots" />
-              <button
-                class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
-              >
-                Add & Install Extension
-              </button>
+            <!-- CARD#3 -->
+            <div class="h-92 w-full max-w-card rounded-2xl shadow-md">
+              <!-- CARD TOP -->
+              <div class="card-upper">
+                <img src="images/logo-opera.svg" alt="opera" />
+                <div>
+                  <h3 class="text-xl font-medium text-greyishBlue">
+                    Add to Opera
+                  </h3>
+                  <h4 class="text-sm leading-7 text-greyishBlue/50">
+                    Minimum version 46
+                  </h4>
+                </div>
+              </div>
+              <!-- CARD BOTTOM -->
+              <div>
+                <img src="images/bg-dots.svg" alt="dots" />
+                <div class="p-6">
+                  <button
+                    class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+                  >
+                    Add & Install Extension
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- FAQS SECTION -->
-        <section>
-          <div>
-            <h2>Frequently Asked Questions</h2>
-            <p>
+        <section class="col-start-2 col-end-14 flex flex-col justify-center items-center gap-16">
+          <div class="text-center grid gap-4">
+            <h2 class="text-2xl font-medium">Frequently Asked Questions</h2>
+            <p class="text-basic font-normal leading-6 text-greyishBlue/50">
               Here are some of our FAQs. If you have any other questions you’d
               like answered please feel free to email us.
             </p>
           </div>
-          <div>
-            <div>
-              <p>What is Bookmark?</p>
-              <img src="images/icon-arrow.svg" alt="arrow" />
+          <!-- Questions & MoreInfo -->
+          <div class="grid place-items-center gap-12">
+            <!-- Questions -->
+            <div class="w-full grid place-items-center">
+              <!-- Question #1 -->
+              <div class="hover:cursor-pointer border-b border-b-greyishBlue/20 py-3 w-full flex justify-between items-center">
+                <p class="text-basic leading-8">What is Bookmark?</p>
+                <img src="images/icon-arrow.svg" alt="arrow" />
+              </div>
+              <!-- Question #2 -->
+              <div class="hover:cursor-pointer border-b border-b-greyishBlue/20 py-3 w-full flex justify-between items-center">
+                <p class="text-basic leading-8">How can I request a new browser?</p>
+                <img src="images/icon-arrow.svg" alt="arrow" />
+              </div>
+              <!-- Question #3 -->
+              <div class="hover:cursor-pointer border-b border-b-greyishBlue/20 py-3 w-full flex justify-between items-center">
+                <p class="text-basic leading-8">Is there a mobile app?</p>
+                <img src="images/icon-arrow.svg" alt="arrow" />
+              </div>
+              <!-- Question #4 -->
+              <div class="hover:cursor-pointer border-b border-b-greyishBlue/20 py-3 w-full flex justify-between items-center">
+                <p class="text-basic leading-8">What about other Chromium browsers?</p>
+                <img src="images/icon-arrow.svg" alt="arrow" />
+              </div>
             </div>
-            <div>
-              <p>How can I request a new browser?</p>
-              <img src="images/icon-arrow.svg" alt="arrow" />
+            <!-- MoreInfo Btn -->
+            <div class="h-12 w-28 rounded-md bg-softBlue">
+              <a
+                class="grid h-full w-full place-items-center text-sm font-medium tracking-wide text-white"
+                href="#"
+              >
+                More Info
+              </a>
             </div>
-            <div>
-              <p>Is there a mobile app?</p>
-              <img src="images/icon-arrow.svg" alt="arrow" />
-            </div>
-            <div>
-              <p>What about other Chromium browsers?</p>
-              <img src="images/icon-arrow.svg" alt="arrow" />
-            </div>
-          </div>
-          <div class="w-28 h-12 bg-softBlue rounded-md">
-            <a class="text-sm font-medium w-full h-full grid place-items-center text-white tracking-wide" href="#">
-              More Info
-            </a>
-          </div>
-        </section>
-        
-        <!-- CONTACT SECTION -->
-        <section class="bg-softBlue text-white">
-          <p class="text-xs leading-10 font-medium tracking-contactSpacing">
-            35,000+ ALREADY JOINED
-          </p>
-          <h2 class="text-2xl leading-7">
-            Stay up-to-date with what we're doing
-          </h2>
-          <div>
-            <input class="placeholder:text-sm placeholder:font-normal placeholder:tracking-wide" type="email" placeholder="Enter your email address">
-            <button class="w-full h-12 bg-softRed rounded-md">Contact Us</button>
           </div>
         </section>
-      
-      </main>
 
+        <!-- CONTACT SECTION -->
+        <section class="grid grid-cols-bleed col-start-1 col-end-15 bg-softBlue text-white">
+          <div class="text-center flex flex-col justify-center items-center w-full col-start-2 col-end-14 py-16 gap-8">
+            <div>
+              <p class="text-xs font-medium leading-10 tracking-contactSpacing">
+                35,000+ ALREADY JOINED
+              </p>
+              <h2 class="text-2xl leading-7">
+                Stay up-to-date with what we're doing
+              </h2>
+            </div>
+          <!-- Input & Submit -->
+          <div class="flex flex-col gap-4">
+            <input
+            class="w-full px-5 py-2 rounded-md text-greyishBlue outline-none placeholder:text-sm placeholder:font-normal placeholder:tracking-wide"
+            type="email"
+            placeholder="Enter your email address"
+            />
+            <button class="h-12 w-full rounded-md bg-softRed">
+              Contact Us
+            </button>
+          </div>
+        </div>
+        </section>
+      </main>
+      
       <!-- FOOTER -->
-      <footer class="text-white col-start-1 col-end-15 bg-greyishBlue grid grid-cols-bleed">
-        <div class="col-start-2 col-end-14 flex flex-col items-center gap-12 py-10">
-          <div class="flex flex-col  gap-10">
-            <img src="images/logo-bookmark.svg" alt="logo-bookmark">
-            <ul class="flex flex-col items-center gap-8 text-basic font-normal leading-4 tracking-widest">
+      <footer
+      class="col-start-1 col-end-15 grid grid-cols-bleed bg-greyishBlue text-white"
+      >
+        <div
+          class="col-start-2 col-end-14 flex flex-col items-center gap-12 py-10"
+        >
+          <div class="flex flex-col gap-10">
+            <img src="images/logo-bookmark.svg" alt="logo-bookmark" />
+            <ul
+              class="flex flex-col items-center gap-8 text-basic font-normal leading-4 tracking-widest"
+            >
               <li>FEATURES</li>
               <li>PRICING</li>
               <li>CONTACT</li>
             </ul>
           </div>
-        <div class="flex gap-10">
-          <img src="images/icon-facebook.svg" alt="icon-facebook">
-          <img src="images/icon-twitter.svg" alt="icon-twitter">
+          <div class="flex gap-10">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" />
+            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+          </div>
         </div>
-      </div>
       </footer>
     </div>
   </body>

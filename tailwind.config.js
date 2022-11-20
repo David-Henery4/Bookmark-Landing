@@ -25,19 +25,22 @@ module.exports = {
       fontSize: {
         basic: "15px",
       },
+      height: {
+        "7/9": "73.5%",
+      },
       lineHeight: {
         11: "52px",
       },
       maxWidth: {
         card: "280px",
-        ctaBtn: "151px"
+        ctaBtn: "151px",
       },
       spacing: {
         92: "371px",
       },
       letterSpacing: {
-        contactSpacing: "4.62px"
-      }
+        contactSpacing: "4.62px",
+      },
     },
   },
   plugins: [],
