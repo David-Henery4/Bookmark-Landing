@@ -27,14 +27,23 @@ module.exports = {
         14: "14",
         15: "15",
       },
+      gap: {
+        17: "72px"
+      },
       fontSize: {
+        navLinks: "13px",
         basic: "15px",
+        32: "32px",
       },
       height: {
         "7/9": "73.5%",
       },
       lineHeight: {
         11: "52px",
+      },
+      width: {
+        41: "166px",
+        98: "442px"
       },
       maxWidth: {
         card: "280px",
