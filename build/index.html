@@ -30,10 +30,10 @@
   </head>
   <body class="min-h-screen font-rubik">
     <!-- CONTAINER -->
-    <div class="smTab:grid-cols-tabBleed grid w-full grid-cols-bleed pt-10">
+    <div class="xl:grid-cols-deskBleed smTab:grid-cols-tabBleed grid w-full grid-cols-bleed pt-10">
       <!-- NAVBAR -->
       <nav
-        class="col-start-2 col-end-14 flex w-full items-center justify-between"
+        class="max-w-allContent mx-auto col-start-2 col-end-14 flex w-full items-center justify-between"
       >
         <img src="images/logo-bookmark.svg" alt="main-logo" />
         <div class="hidden smLap:block
@@ -47,10 +47,10 @@
         </div>
         <img class="hover:cursor-pointer smLap:hidden" src="images/icon-hamburger.svg" alt="" />
       </nav>
-      <main class="smLap:gap-y-40 smTab:grid-cols-tabBleed w-full grid-cols-bleed col-start-1 col-end-15 grid gap-y-20">
+      <main class="xl:grid-cols-deskBleed smLap:gap-y-40 smTab:grid-cols-tabBleed w-full grid-cols-bleed col-start-1 col-end-15 grid gap-y-20">
         <!-- HEADER -->
         <header
-          class="smLap:flex-row-reverse col-start-2 col-end-14 mt-20 flex w-full flex-col items-center justify-center gap-24"
+          class="max-w-allContent mx-auto smLap:flex-row-reverse col-start-2 col-end-14 mt-20 smLap:mt-26 flex w-full flex-col items-center justify-center gap-24"
         >
           <!-- SVG HERO -->
           <div class="max-w-md w-full smLap:max-w-none">
@@ -337,14 +337,14 @@
               </g>
             </svg>
           </div>
-          <div class="text-center flex w-full flex-col items-center justify-center gap-4 smLap:gap-6 smLap:text-left">
+          <div class="text-center flex w-full flex-col items-center justify-center gap-4 smLap:gap-6 smLap:text-left smLap:items-start">
             <h1
-              class="text-3xl font-medium leading-10 text-greyishBlue smLap:w-full smLap:text-5xl"
+              class="text-3xl font-medium leading-10 text-greyishBlue smLap:w-full smLap:text-5xl smLap:leading-11"
             >
               A Simple Bookmark Manager
             </h1>
             <div class="flex flex-col gap-8">
-              <p class="text-basic leading-6 text-greyishBlue/50 smLap:text-lg">
+              <p class="max-w-lg text-basic leading-6 text-greyishBlue/50 smLap:text-lg">
                 A clean and simple interface to organize your favourite
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
@@ -373,13 +373,13 @@
 
         <!-- FEATURES SECTION -->
         <section
-          class="col-start-2 col-end-14 flex w-full flex-col items-center justify-center gap-10"
+          class="max-w-allContent mx-auto col-start-2 col-end-14 flex w-full flex-col items-center justify-center gap-10"
         >
           <div class="w-full text-center">
             <h2 class="text-2xl font-medium leading-11 text-greyishBlue smLap:text-32">
               Features
             </h2>
-            <p class="text-basic leading-6 text-greyishBlue/50 smLap:text-lg smLap:mt-4">
+            <p class="max-w-text mx-auto text-basic leading-6 text-greyishBlue/50 smLap:text-lg smLap:mt-4">
               Our aim is to make it quick and easy for you to access your
               favourite websites. Your bookmarks sync between your devices so
               you can access them on the go.
@@ -410,12 +410,13 @@
                 src="images/illustration-features-tab-1.svg"
                 alt="illustration-tab-1"
               />
+              <!-- add bigger gap at 1280px -->
               <div class="flex flex-col items-center justify-center gap-5 smLap:w-1/2 smLap:gap-4 smLap:items-start">
                 <h2 class="smLap:text-32 smLap:text-left text-2xl font-medium text-greyishBlue">
                   Bookmark in one click
                 </h2>
                 <div class="flex-col flex justify-center items-center gap-4 smLap:gap-8 smLap:items-start">
-                  <p class="smLap:text-lg text-basic font-normal leading-6 text-greyishBlue/50 smLap:text-left">
+                  <p class="max-w-md smLap:text-lg text-basic font-normal leading-6 text-greyishBlue/50 smLap:text-left">
                     Organize your bookmarks however you like. Our simple
                     drag-and-drop interface gives you complete control over how
                     you manage your favourite sites.
@@ -434,12 +435,12 @@
         </section>
 
         <!-- EXTENSION SECTION-->
-        <section class="col-start-2 col-end-14 flex flex-col gap-10 text-center">
+        <section class="max-w-allContent mx-auto col-start-2 col-end-14 flex flex-col gap-10 text-center">
           <div class="flex flex-col gap-4">
             <h2 class="text-2xl font-medium text-greyishBlue smLap:text-32">
               Download the extension
             </h2>
-            <p class="smLap:text-lg text-basic leading-6 text-greyishBlue/50">
+            <p class="max-w-text mx-auto smLap:text-lg text-basic leading-6 text-greyishBlue/50">
               We’ve got more browsers in the pipeline. Please do let us know if
               you’ve got a favourite you’d like us to prioritize.
             </p>
@@ -528,16 +529,16 @@
         </section>
 
         <!-- FAQS SECTION -->
-        <section class="col-start-2 col-end-14 flex flex-col justify-center items-center gap-16">
+        <section class="max-w-allContent mx-auto col-start-2 col-end-14 flex flex-col justify-center items-center gap-16">
           <div class="text-center grid gap-4">
             <h2 class="text-2xl font-medium smLap:text-32">Frequently Asked Questions</h2>
-            <p class="text-basic font-normal leading-6 text-greyishBlue/50 smLap:text-lg">
+            <p class="max-w-text text-basic font-normal leading-6 text-greyishBlue/50 smLap:text-lg">
               Here are some of our FAQs. If you have any other questions you’d
               like answered please feel free to email us.
             </p>
           </div>
           <!-- Questions & MoreInfo -->
-          <div class="w-full max-w-faqs grid place-items-center gap-12">
+          <div class="w-full max-w-text grid place-items-center gap-12">
             <!-- Questions -->
             <div class="w-full grid place-items-center">
               <!-- Question #1 -->
@@ -574,8 +575,8 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="smTab:grid-cols-tabBleed grid grid-cols-bleed col-start-1 col-end-15 bg-softBlue text-white">
-          <div class="text-center flex flex-col justify-center items-center w-full col-start-2 col-end-14 py-16 gap-8 smLap:gap-9">
+        <section class="xl:grid-cols-deskBleed smTab:grid-cols-tabBleed grid grid-cols-bleed col-start-1 col-end-15 bg-softBlue text-white">
+          <div class="max-w-allContent mx-auto text-center flex flex-col justify-center items-center w-full col-start-2 col-end-14 py-16 gap-8 smLap:gap-9">
             <div class="grid gap-4 smLap:gap-6">
               <p class="text-xs smLap:text-navLinks font-normal leading-10 tracking-contactSpacing">
                 35,000+ ALREADY JOINED
@@ -601,10 +602,10 @@
       
       <!-- FOOTER -->
       <footer
-      class="smTab:grid-cols-tabBleed col-start-1 col-end-15 grid grid-cols-bleed bg-greyishBlue text-white"
+      class="xl:grid-cols-deskBleed smTab:grid-cols-tabBleed col-start-1 col-end-15 grid grid-cols-bleed bg-greyishBlue text-white"
       >
         <div
-          class="col-start-2 col-end-14 flex flex-col items-center gap-12 py-10 smLap:flex-row smLap:justify-between"
+          class="max-w-allContent mx-auto w-full col-start-2 col-end-14 flex flex-col items-center gap-12 py-10 smLap:flex-row smLap:justify-between"
         >
           <div class="flex flex-col gap-10 smLap:flex-row">
             <!-- logo -->

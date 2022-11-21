@@ -590,6 +590,10 @@ video {
   max-width: 28rem;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-heroBtns {
   max-width: 343px;
 }
@@ -598,12 +602,16 @@ video {
   max-width: 151px;
 }
 
+.max-w-text {
+  max-width: 540px;
+}
+
 .max-w-card {
   max-width: 280px;
 }
 
-.max-w-faqs {
-  max-width: 540px;
+.max-w-allContent {
+  max-width: 1110px;
 }
 
 .transform {
@@ -658,16 +666,16 @@ video {
   gap: 2.5rem;
 }
 
+.gap-17 {
+  gap: 72px;
+}
+
 .gap-16 {
   gap: 4rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-17 {
-  gap: 72px;
 }
 
 .gap-y-20 {
@@ -933,6 +941,10 @@ video {
     top: 5rem;
   }
 
+  .smLap\:mt-26 {
+    margin-top: 108px;
+  }
+
   .smLap\:mt-4 {
     margin-top: 1rem;
   }
@@ -993,16 +1005,16 @@ video {
     justify-content: space-evenly;
   }
 
+  .smLap\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .smLap\:gap-4 {
     gap: 1rem;
   }
 
   .smLap\:gap-8 {
     gap: 2rem;
-  }
-
-  .smLap\:gap-6 {
-    gap: 1.5rem;
   }
 
   .smLap\:gap-9 {
@@ -1033,8 +1045,9 @@ video {
     text-align: left;
   }
 
-  .smLap\:text-32 {
-    font-size: 32px;
+  .smLap\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .smLap\:text-lg {
@@ -1042,12 +1055,21 @@ video {
     line-height: 1.75rem;
   }
 
+  .smLap\:text-32 {
+    font-size: 32px;
+  }
+
   .smLap\:text-navLinks {
     font-size: 13px;
   }
 
-  .smLap\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .smLap\:leading-11 {
+    line-height: 52px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-deskBleed {
+    grid-template-columns: 165px repeat(12, 1fr) 165px;
   }
 }

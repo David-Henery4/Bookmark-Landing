@@ -22,13 +22,14 @@ module.exports = {
       gridTemplateColumns: {
         bleed: "32px repeat(12, 1fr) 32px",
         tabBleed: "82.5px repeat(12, 1fr) 82.5px",
+        deskBleed: "165px repeat(12, 1fr) 165px",
       },
       gridColumnEnd: {
         14: "14",
         15: "15",
       },
       gap: {
-        17: "72px"
+        17: "72px",
       },
       fontSize: {
         navLinks: "13px",
@@ -43,16 +44,18 @@ module.exports = {
       },
       width: {
         41: "166px",
-        98: "442px"
+        98: "442px",
       },
       maxWidth: {
         card: "280px",
         ctaBtn: "151px",
         heroBtns: "343px",
-        faqs: "540px",
+        text: "540px",
+        allContent: "1110px"
       },
       spacing: {
         92: "371px",
+        26: "108px",
       },
       letterSpacing: {
         contactSpacing: "4.62px",
