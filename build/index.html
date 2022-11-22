@@ -467,27 +467,65 @@
           <div class="flex w-full flex-col gap-17 text-center">
             <!-- Tabs -->
             <div
-              class="flex w-full flex-col justify-center smLap:flex-row smLap:justify-evenly smLap:border-b smLap:border-b-softBlue/20"
+              id="tab-container"
+              class="flex w-full flex-col items-center justify-center smLap:flex-row smLap:justify-evenly"
             >
-              <h3
-                class="border-b border-b-softBlue/20 py-5 text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+              <!-- TAB #1 -->
+              <div
+                class="grid w-full place-items-center border-b border-b-softBlue/20"
               >
-                Simple Bookmarking
-              </h3>
-              <h3
-                class="border-b border-b-softBlue/20 py-5 text-base font-normal leading-4 tracking-wide text-greyishBlue/75 hover:cursor-pointer smLap:border-none"
+                <div
+                  data-tab="1"
+                  id="tab--1"
+                  class="tab border-b-4 border-b-softRed smLap:w-full py-5"
+                >
+                  <h3
+                    class="relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+                  >
+                    Simple Bookmarking
+                    <!-- <span data-tabLine="1" class="tab-line absolute bottom-0 left-0 h-1 w-full bg-softRed top-[33px]"></span> -->
+                  </h3>
+                </div>
+              </div>
+              <!-- TAB #2 -->
+              <div
+                class="grid w-full place-items-center border-b border-b-softBlue/20 "
               >
-                Speedy Searching
-              </h3>
-              <h3
-                class="border-b border-b-softBlue/20 py-5 text-base font-normal leading-4 tracking-wide text-greyishBlue/75 hover:cursor-pointer smLap:border-none"
+                <div
+                  data-tab="2"
+                  id="tab--2"
+                  class="tab smLap:w-full py-5"
+                >
+                  <h3
+                    class="relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+                  >
+                    Speedy Searching
+                  </h3>
+                </div>
+              </div>
+              <!-- TAB #3 -->
+              <div
+                class="grid w-full place-items-center border-b border-b-softBlue/20"
               >
-                Easy Sharing
-              </h3>
+                <div
+                  data-tab="3"
+                  id="tab--3"
+                  class="tab smLap:w-full py-5"
+                >
+                  <h3
+                    class="relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+                  >
+                    Easy Sharing
+                  </h3>
+                </div>
+              </div>
             </div>
             <!-- Slides -->
+
+            <!-- SLIDE # 1 -->
             <div
-              class="flex flex-col items-center justify-center gap-16 smLap:flex-row"
+            id="slide-content--1"
+              class="slide-content flex flex-col items-center justify-center gap-16 smLap:flex-row"
             >
               <img
                 class="mx-auto smLap:w-1/2"
@@ -512,6 +550,87 @@
                     Organize your bookmarks however you like. Our simple
                     drag-and-drop interface gives you complete control over how
                     you manage your favourite sites.
+                  </p>
+                  <div class="h-12 w-28 rounded-md bg-softBlue">
+                    <a
+                      href="#"
+                      class="grid h-full w-full place-items-center text-white"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE #2 -->
+            <!-- ADD FLEX TO SHOW -->
+            <div
+            id="slide-content--2"
+              class="slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
+            >
+              <img
+                class="mx-auto smLap:w-1/2"
+                src="images/illustration-features-tab-2.svg"
+                alt="illustration-tab-1"
+              />
+              <!-- add bigger gap at 1280px -->
+              <div
+                class="flex flex-col items-center justify-center gap-5 smLap:w-1/2 smLap:items-start smLap:gap-4"
+              >
+                <h2
+                  class="text-2xl font-medium text-greyishBlue smLap:text-left smLap:text-32"
+                >
+                  Intelligent search
+                </h2>
+                <div
+                  class="flex flex-col items-center justify-center gap-4 smLap:items-start smLap:gap-8"
+                >
+                  <p
+                    class="max-w-md text-basic font-normal leading-6 text-greyishBlue/50 smLap:text-left smLap:text-lg"
+                  >
+                    Our powerful search feature will help you find saved sites
+                    in no time at all. No need to trawl through all of your
+                    bookmarks.
+                  </p>
+                  <div class="h-12 w-28 rounded-md bg-softBlue">
+                    <a
+                      href="#"
+                      class="grid h-full w-full place-items-center text-white"
+                      >More Info</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SLIDE #3 -->
+            <!-- ADD FLEX TO SHOW -->
+            <div
+            id="slide-content--3"
+              class="slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
+            >
+              <img
+                class="mx-auto smLap:w-1/2"
+                src="images/illustration-features-tab-3.svg"
+                alt="illustration-tab-1"
+              />
+              <!-- add bigger gap at 1280px -->
+              <div
+                class="flex flex-col items-center justify-center gap-5 smLap:w-1/2 smLap:items-start smLap:gap-4"
+              >
+                <h2
+                  class="text-2xl font-medium text-greyishBlue smLap:text-left smLap:text-32"
+                >
+                  Share your bookmarks
+                </h2>
+                <div
+                  class="flex flex-col items-center justify-center gap-4 smLap:items-start smLap:gap-8"
+                >
+                  <p
+                    class="max-w-md text-basic font-normal leading-6 text-greyishBlue/50 smLap:text-left smLap:text-lg"
+                  >
+                    Easily share your bookmarks and collections with others.
+                    Create a shareable link that you can send at the click of a
+                    button.
                   </p>
                   <div class="h-12 w-28 rounded-md bg-softBlue">
                     <a
@@ -651,16 +770,25 @@
             <div id="questions" class="grid w-full place-items-center">
               <!-- Question #1 -->
               <div
-              data-quest="1"
+                data-quest="1"
                 class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     What is Bookmark?
                   </p>
-                  <img data-icon="1" class="accord-icon rotate-0" src="images/icon-arrow.svg" alt="arrow" style="transform: rotateX(0deg)"/>
+                  <img
+                    data-icon="1"
+                    class="accord-icon rotate-0"
+                    src="images/icon-arrow.svg"
+                    alt="arrow"
+                    style="transform: rotateX(0deg)"
+                  />
                 </div>
-                <div data-questContent="1" class="accord-content overflow-hidden max-h-0 transition-all ease-in-out duration-1000">
+                <div
+                  data-questContent="1"
+                  class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
+                >
                   <p class="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Fusce tincidunt justo eget ultricies fringilla. Phasellus
@@ -671,16 +799,25 @@
 
               <!-- Question #2 -->
               <div
-              data-quest="2"
+                data-quest="2"
                 class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     How can I request a new browser?
                   </p>
-                  <img data-icon="2" class="accord-icon rotate-0" src="images/icon-arrow.svg" alt="arrow" style="transform: rotateX(0deg)"/>
+                  <img
+                    data-icon="2"
+                    class="accord-icon rotate-0"
+                    src="images/icon-arrow.svg"
+                    alt="arrow"
+                    style="transform: rotateX(0deg)"
+                  />
                 </div>
-                <div data-questContent="2" class="accord-content overflow-hidden max-h-0 transition-all ease-in-out duration-1000">
+                <div
+                  data-questContent="2"
+                  class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
+                >
                   <p class="">
                     Vivamus luctus eros aliquet convallis ultricies. Mauris
                     augue massa, ultricies non ligula. Suspendisse imperdiet.
@@ -694,16 +831,25 @@
 
               <!-- Question #3 -->
               <div
-              data-quest="3"
+                data-quest="3"
                 class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     Is there a mobile app?
                   </p>
-                  <img data-icon="3" class="accord-icon rotate-0" src="images/icon-arrow.svg" alt="arrow" style="transform: rotateX(0deg)"/>
+                  <img
+                    data-icon="3"
+                    class="accord-icon rotate-0"
+                    src="images/icon-arrow.svg"
+                    alt="arrow"
+                    style="transform: rotateX(0deg)"
+                  />
                 </div>
-                <div data-questContent="3" class="accord-content overflow-hidden max-h-0 transition-all ease-in-out duration-1000">
+                <div
+                  data-questContent="3"
+                  class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
+                >
                   <p class="">
                     Sed consectetur quam id neque fermentum accumsan. Praesent
                     luctus vestibulum dolor, ut condimentum urna vulputate eget.
@@ -715,16 +861,25 @@
 
               <!-- Question #4 -->
               <div
-              data-quest="4"
+                data-quest="4"
                 class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     What about other Chromium browsers?
                   </p>
-                  <img data-icon="4" class="accord-icon rotate-0" src="images/icon-arrow.svg" alt="arrow" style="transform: rotateX(0deg)"/>
+                  <img
+                    data-icon="4"
+                    class="accord-icon rotate-0"
+                    src="images/icon-arrow.svg"
+                    alt="arrow"
+                    style="transform: rotateX(0deg)"
+                  />
                 </div>
-                <div data-questContent="4" class="accord-content overflow-hidden max-h-0 transition-all ease-in-out duration-1000">
+                <div
+                  data-questContent="4"
+                  class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
+                >
                   <p class="">
                     Integer condimentum ipsum id imperdiet finibus. Vivamus in
                     placerat mi, at euismod dui. Aliquam vitae neque eget nisl
