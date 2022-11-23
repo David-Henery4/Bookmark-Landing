@@ -87,7 +87,7 @@
     </aside>
     <!-- CONTAINER -->
     <div
-      class="grid w-full grid-cols-bleed pt-10 smTab:grid-cols-tabBleed xl:grid-cols-deskBleed"
+      class="grid w-full grid-cols-bleed pt-10 smTab:grid-cols-tabBleed xl:grid-cols-deskBleed overflow-x-hidden"
     >
       <!-- NAVBAR -->
       <nav
@@ -123,7 +123,8 @@
           class="col-start-2 col-end-14 mx-auto mt-20 flex w-full max-w-allContent flex-col items-center justify-center gap-24 smLap:mt-26 smLap:flex-row-reverse"
         >
           <!-- SVG HERO -->
-          <div class="w-full max-w-md smLap:max-w-none">
+          <div class="w-full max-w-md smLap:max-w-none relative">
+            <div class="absolute bg-softBlue rounded-[316px] w-[577px] h-[203px] -z-10 top-11 left-9"></div>
             <svg
               class="h-full w-full"
               viewbox="27 -10 600 427"
@@ -471,7 +472,7 @@
             <!-- Tabs -->
             <div
               id="tab-container"
-              class="flex w-full flex-col items-center justify-center smLap:flex-row smLap:justify-evenly"
+              class="smLap:max-w-[730px] smLap:mx-auto flex w-full flex-col items-center justify-center smLap:flex-row smLap:justify-evenly"
             >
               <!-- TAB #1 -->
               <div
@@ -526,7 +527,6 @@
                 src="images/illustration-features-tab-1.svg"
                 alt="illustration-tab-1"
               />
-              <!-- add bigger gap at 1280px -->
               <div
                 class="flex flex-col items-center justify-center gap-5 smLap:w-1/2 smLap:items-start smLap:gap-4"
               >
@@ -560,14 +560,13 @@
             <!-- ADD FLEX TO SHOW -->
             <div
               id="slide-content--2"
-              class="slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
+              class="xl:gap-32 slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
             >
               <img
                 class="mx-auto smLap:w-1/2"
                 src="images/illustration-features-tab-2.svg"
                 alt="illustration-tab-1"
               />
-              <!-- add bigger gap at 1280px -->
               <div
                 class="flex flex-col items-center justify-center gap-5 smLap:w-1/2 smLap:items-start smLap:gap-4"
               >
@@ -600,14 +599,13 @@
             <!-- ADD FLEX TO SHOW -->
             <div
               id="slide-content--3"
-              class="slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
+              class="xl:gap-32 slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
             >
               <img
                 class="mx-auto smLap:w-1/2"
                 src="images/illustration-features-tab-3.svg"
                 alt="illustration-tab-1"
               />
-              <!-- add bigger gap at 1280px -->
               <div
                 class="flex flex-col items-center justify-center gap-5 smLap:w-1/2 smLap:items-start smLap:gap-4"
               >
@@ -995,7 +993,6 @@
                 </g>
               </svg>
             </div>
-            <!-- <img src="images/logo-bookmark.svg" alt="logo-bookmark" /> -->
             <!-- Links -->
             <ul
               class="flex flex-col items-center gap-8 text-basic font-normal leading-4 tracking-widest smLap:flex-row smLap:text-navLinks"
