@@ -2,10 +2,11 @@
 
 const email = document.getElementById("email");
 const submitBtn = document.getElementById("submit");
-const errorMsg = document.getElementById("error-msg");
+const msgContainer = document.getElementById("msg-container");
 const errorIcon = document.getElementById("error-icon");
+const errorText = document.getElementById("error-text")
+const confirmText = document.getElementById("confirm-text")
 
-// ADD TO EMAIL: border-softRed border-4 border-b-[22px]
 
 // SUBMIT BTN
 submitBtn.addEventListener("click", () => {
@@ -15,9 +16,11 @@ submitBtn.addEventListener("click", () => {
     handleErrorUi();
   }
   if (isValid) {
-    handleValidEmail();
+    handleRemoveErrorUi();
+    emailConfirmation()
   }
 });
+
 // VALIDATION CHECK
 const validation = (query) => {
   const emailCheck = new RegExp(
@@ -25,19 +28,45 @@ const validation = (query) => {
   );
   return emailCheck.test(query);
 };
+
 // ERROR UI
 const handleErrorUi = () => {
   email.classList.add("border-softRed");
   email.classList.add("border-4");
   email.classList.add("border-b-[22px]");
   errorIcon.classList.remove("hidden");
-  errorMsg.classList.remove("hidden");
+  msgContainer.classList.remove("hidden");
+  errorText.classList.remove("hidden")
 };
-// VALID EMAIL UI
-const handleValidEmail = () => {
+
+// REMOVING ERROR UI WHEN VALID
+const handleRemoveErrorUi = () => {
   email.classList.remove("border-softRed");
   email.classList.remove("border-4");
   email.classList.remove("border-b-[22px]");
   errorIcon.classList.add("hidden");
-  errorMsg.classList.add("hidden");
+  msgContainer.classList.add("hidden");
+  errorText.classList.add("hidden");
+  email.value = ""
 };
+
+// EMAIL CONFIRMATION VALID UI
+const emailConfirmation = () => {
+  email.classList.add("border-4")
+  email.classList.add("border-b-[22px]")
+  email.classList.add("border-okGreen");
+  msgContainer.classList.remove("hidden")
+  confirmText.classList.remove("hidden")
+  handleRemoveValidEmailUi()
+}
+
+// REMOVE EMAIL CONFIRMATION UI
+const handleRemoveValidEmailUi = () => {
+  setTimeout(() => {
+    email.classList.remove("border-4");
+    email.classList.remove("border-b-[22px]");
+    email.classList.remove("border-okGreen");
+    msgContainer.classList.add("hidden");
+    confirmText.classList.add("hidden");
+  }, 4500);
+}

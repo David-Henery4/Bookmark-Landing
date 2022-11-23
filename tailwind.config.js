@@ -13,6 +13,7 @@ module.exports = {
       greyishBlue: "#242A45",
       veryDarkBlue: "#9194A2",
       white: "#ffffff",
+      okGreen: "#18CF08",
     },
     extend: {
       screens: {
@@ -51,7 +52,7 @@ module.exports = {
         ctaBtn: "151px",
         heroBtns: "343px",
         text: "540px",
-        allContent: "1110px"
+        allContent: "1110px",
       },
       spacing: {
         92: "371px",
