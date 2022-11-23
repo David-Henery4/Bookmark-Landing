@@ -29,6 +29,8 @@ const validation = (query) => {
   return emailCheck.test(query);
 };
 
+// border-softRed border-4 border-b-[22px]
+
 // ERROR UI
 const handleErrorUi = () => {
   email.classList.add("border-softRed");

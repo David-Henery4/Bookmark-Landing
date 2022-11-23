@@ -28,7 +28,7 @@
     <script defer src="sidebar.js"></script>
     <script defer src="tabs.js"></script>
     <script defer src="accordion.js"></script>
-    <script defer src="emailValidation.js" ></script>
+    <script defer src="emailValidation.js"></script>
     <title>Bookmark landing page</title>
   </head>
   <body class="min-h-screen font-rubik">
@@ -98,10 +98,12 @@
           <ul
             class="flex items-center justify-center gap-12 text-navLinks text-greyishBlue"
           >
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">PRICING</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <button class="rounded-md bg-softRed px-8 py-3 text-white">
+            <li class="hover:text-softRed"><a href="#">FEATURES</a></li>
+            <li class="hover:text-softRed"><a href="#">PRICING</a></li>
+            <li class="hover:text-softRed"><a href="#">CONTACT</a></li>
+            <button
+              class="rounded-md bg-softRed px-8 py-3 text-white hover:bg-opacity-0 hover:text-softRed hover:outline hover:outline-softRed"
+            >
               LOGIN
             </button>
           </ul>
@@ -425,16 +427,16 @@
                 class="mx-auto flex w-full max-w-heroBtns items-center justify-between gap-3 text-center smLap:max-w-none smLap:justify-start smLap:gap-4"
               >
                 <div
-                  class="h-12 max-w-ctaBtn rounded-md bg-softBlue px-3 smLap:w-41 smLap:max-w-none"
+                  class="hover:bg-opacity-0 hover:outline hover:outline-softBlue hover:text-softBlue h-12 max-w-ctaBtn rounded-md bg-softBlue px-3 smLap:w-41 smLap:max-w-none text-white"
                 >
                   <a
                     href="#"
-                    class="text grid h-full w-full place-items-center text-sm font-medium text-white"
+                    class="text grid h-full w-full place-items-center text-sm font-medium"
                     >Get it on Chrome</a
                   >
                 </div>
                 <div
-                  class="h-12 max-w-ctaBtn px-3 shadow-md smLap:w-41 smLap:max-w-none"
+                  class=" h-12 max-w-ctaBtn text-greyishBlue/75 bg-offWhite hover:bg-opacity-0 hover:outline hover:outline-grey px-3 shadow-md smLap:w-41 smLap:max-w-none"
                 >
                   <a
                     href="#"
@@ -478,27 +480,22 @@
                 <div
                   data-tab="1"
                   id="tab--1"
-                  class="tab border-b-4 border-b-softRed smLap:w-full py-5"
+                  class="tab border-b-4 border-b-softRed py-5 smLap:w-full"
                 >
                   <h3
-                    class="relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+                    class="hover:text-softRed relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
                   >
                     Simple Bookmarking
-                    <!-- <span data-tabLine="1" class="tab-line absolute bottom-0 left-0 h-1 w-full bg-softRed top-[33px]"></span> -->
                   </h3>
                 </div>
               </div>
               <!-- TAB #2 -->
               <div
-                class="grid w-full place-items-center border-b border-b-softBlue/20 "
+                class="grid w-full place-items-center border-b border-b-softBlue/20"
               >
-                <div
-                  data-tab="2"
-                  id="tab--2"
-                  class="tab smLap:w-full py-5"
-                >
+                <div data-tab="2" id="tab--2" class="tab py-5 smLap:w-full">
                   <h3
-                    class="relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+                    class="hover:text-softRed relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
                   >
                     Speedy Searching
                   </h3>
@@ -508,13 +505,9 @@
               <div
                 class="grid w-full place-items-center border-b border-b-softBlue/20"
               >
-                <div
-                  data-tab="3"
-                  id="tab--3"
-                  class="tab smLap:w-full py-5"
-                >
+                <div data-tab="3" id="tab--3" class="tab py-5 smLap:w-full">
                   <h3
-                    class="relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
+                    class="hover:text-softRed relative text-base font-normal leading-4 tracking-wide text-greyishBlue hover:cursor-pointer smLap:border-none"
                   >
                     Easy Sharing
                   </h3>
@@ -525,7 +518,7 @@
 
             <!-- SLIDE # 1 -->
             <div
-            id="slide-content--1"
+              id="slide-content--1"
               class="slide-content flex flex-col items-center justify-center gap-16 smLap:flex-row"
             >
               <img
@@ -566,7 +559,7 @@
             <!-- SLIDE #2 -->
             <!-- ADD FLEX TO SHOW -->
             <div
-            id="slide-content--2"
+              id="slide-content--2"
               class="slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
             >
               <img
@@ -606,7 +599,7 @@
             <!-- SLIDE #3 -->
             <!-- ADD FLEX TO SHOW -->
             <div
-            id="slide-content--3"
+              id="slide-content--3"
               class="slide-content hidden flex-col items-center justify-center gap-16 smLap:flex-row"
             >
               <img
@@ -684,7 +677,7 @@
                 <img src="images/bg-dots.svg" alt="dots" />
                 <div class="p-6">
                   <button
-                    class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+                    class="hover:outline hover:outline-softBlue hover:bg-white hover:text-softBlue h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
                   >
                     Add & Install Extension
                   </button>
@@ -712,7 +705,7 @@
                 <img src="images/bg-dots.svg" alt="dots" />
                 <div class="p-6">
                   <button
-                    class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+                    class="hover:outline hover:outline-softBlue hover:bg-white hover:text-softBlue h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
                   >
                     Add & Install Extension
                   </button>
@@ -740,7 +733,7 @@
                 <img src="images/bg-dots.svg" alt="dots" />
                 <div class="p-6">
                   <button
-                    class="h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
+                    class="hover:outline hover:outline-softBlue hover:bg-white hover:text-softBlue h-12 w-full rounded-md bg-softBlue text-sm font-medium leading-7 text-white"
                   >
                     Add & Install Extension
                   </button>
@@ -772,25 +765,32 @@
               <!-- Question #1 -->
               <div
                 data-quest="1"
-                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
+                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 text-greyishBlue hover:cursor-pointer hover:text-softRed"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     What is Bookmark?
                   </p>
-                  <img
+                  <div
                     data-icon="1"
-                    class="accord-icon rotate-0"
-                    src="images/icon-arrow.svg"
+                    class="accord-icon rotate-0 stroke-softBlue"
                     alt="arrow"
                     style="transform: rotateX(0deg)"
-                  />
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="12"
+                    >
+                      <path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+                    </svg>
+                  </div>
                 </div>
                 <div
                   data-questContent="1"
                   class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
                 >
-                  <p class="">
+                  <p class="text-greyishBlue">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Fusce tincidunt justo eget ultricies fringilla. Phasellus
                     blandit ipsum quis quam ornare mattis.
@@ -801,25 +801,32 @@
               <!-- Question #2 -->
               <div
                 data-quest="2"
-                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
+                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 text-greyishBlue hover:cursor-pointer hover:text-softRed"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     How can I request a new browser?
                   </p>
-                  <img
+                  <div
                     data-icon="2"
-                    class="accord-icon rotate-0"
-                    src="images/icon-arrow.svg"
+                    class="accord-icon rotate-0 stroke-softBlue"
                     alt="arrow"
                     style="transform: rotateX(0deg)"
-                  />
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="12"
+                    >
+                      <path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+                    </svg>
+                  </div>
                 </div>
                 <div
                   data-questContent="2"
                   class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
                 >
-                  <p class="">
+                  <p class="text-greyishBlue">
                     Vivamus luctus eros aliquet convallis ultricies. Mauris
                     augue massa, ultricies non ligula. Suspendisse imperdiet.
                     Vivamus luctus eros aliquet convallis ultricies. Mauris
@@ -833,25 +840,25 @@
               <!-- Question #3 -->
               <div
                 data-quest="3"
-                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
+                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 text-greyishBlue hover:cursor-pointer hover:text-softRed"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     Is there a mobile app?
                   </p>
-                  <img
-                    data-icon="3"
-                    class="accord-icon rotate-0"
-                    src="images/icon-arrow.svg"
+                  <div
+                  data-icon="3"
+                    class="accord-icon rotate-0 stroke-softBlue"
                     alt="arrow"
-                    style="transform: rotateX(0deg)"
-                  />
+                    style="transform: rotateX(0deg)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                  </div>
                 </div>
                 <div
                   data-questContent="3"
                   class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
                 >
-                  <p class="">
+                  <p class="text-greyishBlue">
                     Sed consectetur quam id neque fermentum accumsan. Praesent
                     luctus vestibulum dolor, ut condimentum urna vulputate eget.
                     Cras in ligula quis est pharetra mattis sit amet pharetra
@@ -863,25 +870,25 @@
               <!-- Question #4 -->
               <div
                 data-quest="4"
-                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 hover:cursor-pointer"
+                class="accord flex w-full flex-col items-center justify-between border-b border-b-greyishBlue/20 py-3 text-greyishBlue hover:cursor-pointer hover:text-softRed"
               >
                 <div class="flex h-full w-full items-center justify-between">
                   <p class="text-basic leading-8 smLap:text-lg">
                     What about other Chromium browsers?
                   </p>
-                  <img
-                    data-icon="4"
-                    class="accord-icon rotate-0"
-                    src="images/icon-arrow.svg"
+                  <div
+                  data-icon="4"
+                    class="accord-icon rotate-0 stroke-softBlue"
                     alt="arrow"
-                    style="transform: rotateX(0deg)"
-                  />
+                    style="transform: rotateX(0deg)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                  </div>
                 </div>
                 <div
                   data-questContent="4"
                   class="accord-content max-h-0 overflow-hidden transition-all duration-1000 ease-in-out"
                 >
-                  <p class="">
+                  <p class="text-greyishBlue">
                     Integer condimentum ipsum id imperdiet finibus. Vivamus in
                     placerat mi, at euismod dui. Aliquam vitae neque eget nisl
                     gravida pellentesque non ut velit.
@@ -906,9 +913,9 @@
           class="col-start-1 col-end-15 grid grid-cols-bleed bg-softBlue text-white smTab:grid-cols-tabBleed xl:grid-cols-deskBleed"
         >
           <div
-            class="max-w-[360px] col-start-2 col-end-14 mx-auto flex w-full smLap:max-w-allContent flex-col items-center justify-center gap-8 py-16 text-center smLap:gap-9"
+            class="col-start-2 col-end-14 mx-auto flex w-full max-w-[360px] flex-col items-center justify-center gap-8 py-16 text-center smLap:max-w-allContent smLap:gap-9"
           >
-            <div class="grid gap-4 smLap:gap-6 max-w-[408px]">
+            <div class="grid max-w-[408px] gap-4 smLap:gap-6">
               <p
                 class="text-xs font-normal leading-10 tracking-contactSpacing smLap:text-navLinks"
               >
@@ -919,22 +926,37 @@
               </h2>
             </div>
             <!-- Input & Submit -->
-            <div class="smLap:h-12 flex flex-col justify-center items-center gap-4 smLap:flex-row w-full smLap:w-98">
-              <div class="relative w-full smLap:w-[69%] smLap:h-full">
+            <div
+              class="flex w-full flex-col items-center justify-center gap-4 smLap:h-12 smLap:w-98 smLap:flex-row"
+            >
+              <div class="relative w-full smLap:h-full smLap:w-[69%]">
                 <input
-                id="email"
-                name="email"
-                class="min-h-full w-full rounded-md px-5 py-2 text-greyishBlue outline-none placeholder:text-sm placeholder:font-normal placeholder:tracking-wide"
-                type="email"
-                placeholder="Enter your email address"
+                  id="email"
+                  name="email"
+                  class="min-h-full w-full rounded-md px-5 py-2 text-greyishBlue outline-none placeholder:text-sm placeholder:font-normal placeholder:tracking-wide"
+                  type="email"
+                  placeholder="Enter your email address"
                 />
-                <img id="error-icon" class="hidden absolute top-3.5 right-2" src="images/icon-error.svg" alt="error">
-                <div id="msg-container" class="hidden smLap:top-[47px] px-3 py-[2px] absolute bottom-0 font-medium text-[10px] tracking-wider italic">
-                  <p id="error-text" class="hidden">Whoops, make sure it's a email</p>
+                <img
+                  id="error-icon"
+                  class="absolute top-3.5 right-2 hidden"
+                  src="images/icon-error.svg"
+                  alt="error"
+                />
+                <div
+                  id="msg-container"
+                  class="absolute bottom-0 hidden px-3 py-[2px] text-[10px] font-medium italic tracking-wider smLap:top-[47px]"
+                >
+                  <p id="error-text" class="hidden">
+                    Whoops, make sure it's a email
+                  </p>
                   <p id="confirm-text" class="hidden">Thank you for joining</p>
                 </div>
               </div>
-              <button id="submit" class="smLap:h-full h-12 w-full rounded-md bg-softRed smLap:w-32">
+              <button
+                id="submit"
+                class="h-12 w-full rounded-md bg-softRed hover:bg-white hover:text-softRed hover:outline hover:outline-softRed smLap:h-full smLap:w-32"
+              >
                 Contact Us
               </button>
             </div>
@@ -978,14 +1000,36 @@
             <ul
               class="flex flex-col items-center gap-8 text-basic font-normal leading-4 tracking-widest smLap:flex-row smLap:text-navLinks"
             >
-              <li>FEATURES</li>
-              <li>PRICING</li>
-              <li>CONTACT</li>
+              <li class="hover:text-softRed">
+                <a href="#">FEATURES</a>
+              </li>
+              <li class="hover:text-softRed">
+                <a href="#">PRICING</a>
+              </li>
+              <li class="hover:text-softRed">
+                <a href="#">CONTACT</a>
+              </li>
             </ul>
           </div>
           <div class="flex gap-10">
-            <img src="images/icon-facebook.svg" alt="icon-facebook" />
-            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+            <!-- FB -->
+            <a class="fill-white hover:fill-softRed" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  fill-rule="evenodd"
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                />
+              </svg>
+            </a>
+            <!-- TW -->
+            <a class="fill-white hover:fill-softRed" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                <path
+                  fill-rule="evenodd"
+                  d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

@@ -14,6 +14,8 @@ module.exports = {
       veryDarkBlue: "#9194A2",
       white: "#ffffff",
       okGreen: "#18CF08",
+      offWhite: "#F7F7F7",
+      grey: "#5B6074",
     },
     extend: {
       screens: {

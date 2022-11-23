@@ -37,12 +37,15 @@ const flipAccordionIcon = (currentQuest) => {
     const icon = e.dataset.icon;
     // TOGGLES ACTIVE ICON
     if (currentQuest.dataset.quest === icon) {
+      e.classList.toggle("stroke-softRed");
+      // stroke-softRed
       e.style.transform === "rotateX(0deg)"
         ? (e.style.transform = "rotateX(180deg)")
         : (e.style.transform = "rotateX(0deg)");
     }
     // RESETS NON-ACTIVE ICONS
     if (icon !== currentQuest.dataset.quest) {
+      e.classList.remove("stroke-softRed");
       e.style.transform = "rotateX(0deg)";
     }
   });
