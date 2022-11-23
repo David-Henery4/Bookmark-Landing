@@ -28,6 +28,7 @@
     <script defer src="sidebar.js"></script>
     <script defer src="tabs.js"></script>
     <script defer src="accordion.js"></script>
+    <script defer src="emailValidation.js" ></script>
     <title>Bookmark landing page</title>
   </head>
   <body class="min-h-screen font-rubik">
@@ -905,26 +906,32 @@
           class="col-start-1 col-end-15 grid grid-cols-bleed bg-softBlue text-white smTab:grid-cols-tabBleed xl:grid-cols-deskBleed"
         >
           <div
-            class="col-start-2 col-end-14 mx-auto flex w-full max-w-allContent flex-col items-center justify-center gap-8 py-16 text-center smLap:gap-9"
+            class="max-w-[360px] col-start-2 col-end-14 mx-auto flex w-full smLap:max-w-allContent flex-col items-center justify-center gap-8 py-16 text-center smLap:gap-9"
           >
-            <div class="grid gap-4 smLap:gap-6">
+            <div class="grid gap-4 smLap:gap-6 max-w-[408px]">
               <p
                 class="text-xs font-normal leading-10 tracking-contactSpacing smLap:text-navLinks"
               >
                 35,000+ ALREADY JOINED
               </p>
-              <h2 class="text-2xl leading-7 smLap:text-32">
+              <h2 class="text-2xl leading-7 smLap:text-32 smLap:leading-10">
                 Stay up-to-date with what we're doing
               </h2>
             </div>
             <!-- Input & Submit -->
-            <div class="flex flex-col gap-4 smLap:flex-row">
-              <input
-                class="w-full rounded-md px-5 py-2 text-greyishBlue outline-none placeholder:text-sm placeholder:font-normal placeholder:tracking-wide smLap:w-98"
+            <div class="smLap:h-12 flex flex-col justify-center items-center gap-4 smLap:flex-row w-full smLap:w-98">
+              <div class="relative w-full smLap:w-[69%] smLap:h-full">
+                <input
+                id="email"
+                name="email"
+                class="min-h-full w-full rounded-md px-5 py-2 text-greyishBlue outline-none placeholder:text-sm placeholder:font-normal placeholder:tracking-wide"
                 type="email"
                 placeholder="Enter your email address"
-              />
-              <button class="h-12 w-full rounded-md bg-softRed smLap:w-32">
+                />
+                <img id="error-icon" class="hidden absolute top-3.5 right-2" src="images/icon-error.svg" alt="error">
+                <div id="error-msg" class="hidden smLap:top-[47px] px-3 py-[2px] absolute bottom-0 font-medium text-[10px] tracking-wider italic"><p>Whoops, make sure it's a email</p></div>
+              </div>
+              <button id="submit" class="smLap:h-full h-12 w-full rounded-md bg-softRed smLap:w-32">
                 Contact Us
               </button>
             </div>
