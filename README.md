@@ -33,9 +33,8 @@ Users can:
 
 ### Links
 
-<!-- LINKS TO BE ADDED! -->
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend mentor](https://github.com/David-Henery4/Bookmark-Landing)
+- Live Site URL: [Bookmarks Landing](https://bookmarks-home-landing.netlify.app)
 
 ## My process
 
