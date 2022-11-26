@@ -573,6 +573,10 @@ video {
   z-index: -10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -1189,6 +1193,15 @@ video {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-softRed:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 89 89 / var(--tw-border-opacity));
 }
 
 .hover\:bg-white:hover {
